@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="UnitTest1.fs" />
+        <Compile Include="01_Not_Quite_Lisp.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
@@ -24,6 +24,10 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\AdventOfCode2015\AdventOfCode2015.fsproj" />
     </ItemGroup>
 
 </Project>
