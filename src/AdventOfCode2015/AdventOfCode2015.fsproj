@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <Compile Include="01_Not_Quite_Lisp.fs" />
+        <Compile Include="02_I_Was_Told_There_Would_Be_No_Math.fs" />
     </ItemGroup>
 
     <ItemGroup>
