@@ -1,6 +1,4 @@
-namespace AdventOfCode2015
-
-module NotQuiteLisp =
+module NotQuiteLisp
   let private floorToValue c =
     match c with
     | '(' -> 1

@@ -1,29 +1,28 @@
 module IWasToldThereWouldBeNoMath.Tests
 
-  open AdventOfCode2015
-  open NUnit.Framework
+open NUnit.Framework
 
-  module PartOne =
-    [<Test>]
-    let ``1x1x1 returns 7`` () =
-      let result = IWasToldThereWouldBeNoMath.calculateWrappingPaperAmount "1x1x1"
-      Assert.AreEqual(7, result)
+module PartOne =
+  [<Test>]
+  let ``1x1x1 returns 7`` () =
+    let result = calculateWrappingPaperAmount "1x1x1"
+    Assert.AreEqual(7, result)
 
-    [<Test>]
-    let ``2x3x4 returns 58`` () =
-      let result = IWasToldThereWouldBeNoMath.calculateWrappingPaperAmount "2x3x4"
-      Assert.AreEqual(58, result)
+  [<Test>]
+  let ``2x3x4 returns 58`` () =
+    let result = calculateWrappingPaperAmount "2x3x4"
+    Assert.AreEqual(58, result)
 
-    let ``Multi-line strings are parsed correctly`` () =
-      let input = @"1x1x1
+  let ``Multi-line strings are parsed correctly`` () =
+    let input = @"1x1x1
 2x3x4
 1x1x10"
 
-      let result = IWasToldThereWouldBeNoMath.calculateWrappingPaperAmount input
-      Assert.AreEqual(107, result)
+    let result = calculateWrappingPaperAmount input
+    Assert.AreEqual(107, result)
 
-  module AcceptanceTest =
-    let input = @"4x23x21
+module AcceptanceTest =
+  let input = @"4x23x21
 22x29x19
 11x4x11
 8x10x5
@@ -1023,13 +1022,13 @@ module IWasToldThereWouldBeNoMath.Tests
 21x29x14
 20x29x30
 23x11x5"
+  
+  [<Test>]
+  let ``Acceptance Test Part 1`` () =
+    let result = calculateWrappingPaperAmount input
+    Assert.AreEqual(1598415, result)
     
-    [<Test>]
-    let ``Acceptance Test Part 1`` () =
-      let result = IWasToldThereWouldBeNoMath.calculateWrappingPaperAmount input
-      Assert.AreEqual(1598415, result)
-      
-    [<Test>]
-    let ``Acceptance Test Part 2`` () =
-      let result = IWasToldThereWouldBeNoMath.calculateRibbonLength input
-      Assert.AreEqual(3812909, result)
+  [<Test>]
+  let ``Acceptance Test Part 2`` () =
+    let result = calculateRibbonLength input
+    Assert.AreEqual(3812909, result)

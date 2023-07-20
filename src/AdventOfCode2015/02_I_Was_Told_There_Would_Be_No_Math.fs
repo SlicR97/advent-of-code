@@ -1,6 +1,4 @@
-namespace AdventOfCode2015
-
-module IWasToldThereWouldBeNoMath =
+module IWasToldThereWouldBeNoMath
   let private scanLine (line: string) =
     line.Split("x")
     |> Seq.map int

@@ -10,6 +10,7 @@
     <ItemGroup>
         <Compile Include="01_Not_Quite_Lisp.fs" />
         <Compile Include="02_I_Was_Told_There_Would_Be_No_Math.fs" />
+        <Compile Include="03_Perfectly_Spherical_Houses_In_A_Vacuum.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
@@ -26,6 +27,7 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Update="FSharp.Core" Version="7.0.300" />
     </ItemGroup>
 
     <ItemGroup>
