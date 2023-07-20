@@ -11,6 +11,7 @@
         <Compile Include="01_Not_Quite_Lisp.fs" />
         <Compile Include="02_I_Was_Told_There_Would_Be_No_Math.fs" />
         <Compile Include="03_Perfectly_Spherical_Houses_In_A_Vacuum.fs" />
+        <Compile Include="04_The_Ideal_Stocking_Stuffer.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
